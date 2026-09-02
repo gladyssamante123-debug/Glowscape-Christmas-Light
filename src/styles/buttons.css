@@ -1,0 +1,87 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.95rem 1.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--gold {
+  background: linear-gradient(135deg, var(--amber-300), var(--amber-500) 70%, var(--rose-500));
+  color: var(--ink-950);
+  border-color: var(--amber-500);
+  box-shadow: 0 0 0 1px rgba(255, 171, 85, 0.18), 0 16px 34px -16px rgba(255, 92, 150, 0.4), 0 16px 34px -16px rgba(255, 148, 51, 0.45);
+}
+.btn--gold:hover {
+  background: linear-gradient(135deg, var(--amber-300), var(--amber-400) 70%, var(--rose-400));
+  border-color: var(--amber-300);
+}
+
+.btn--outline-dark {
+  border-color: var(--hairline);
+  color: var(--text-primary);
+  background: transparent;
+}
+.btn--outline-dark:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn--outline-light {
+  border-color: var(--hairline);
+  color: var(--text-primary);
+  background: transparent;
+}
+.btn--outline-light:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn--ghost {
+  color: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+}
+
+.btn--lg {
+  padding: 1.15rem 2.4rem;
+  font-size: 1rem;
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  color: var(--text-muted);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}

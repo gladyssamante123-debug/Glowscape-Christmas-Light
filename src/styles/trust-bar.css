@@ -1,0 +1,28 @@
+.trust-bar {
+  background: var(--ink-900);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.trust-bar__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem 2.6rem;
+  padding: 1.15rem 1.75rem;
+}
+
+.trust-bar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--mist-300);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.trust-bar__mark {
+  color: var(--accent);
+  font-size: 0.8rem;
+}

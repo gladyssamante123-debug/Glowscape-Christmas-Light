@@ -1,0 +1,61 @@
+.service-areas {
+  background: var(--bg-base);
+  --glow-color: var(--glow-areas);
+}
+
+.service-areas__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.6rem;
+  align-items: start;
+}
+
+.service-areas h2 {
+  margin: 1.1rem 0 1.2rem;
+  max-width: 20ch;
+  color: var(--paper-50);
+}
+
+.service-areas__copy {
+  color: var(--text-muted);
+  max-width: 48ch;
+  margin-bottom: 1.8rem;
+}
+
+.service-areas__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem 1rem;
+}
+
+.service-areas__list li {
+  position: relative;
+  padding: 0.9rem 0 0.9rem 1.1rem;
+  border-bottom: 1px solid var(--hairline);
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.service-areas__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.35rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+@media (min-width: 720px) {
+  .service-areas__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .service-areas__grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4rem;
+  }
+}

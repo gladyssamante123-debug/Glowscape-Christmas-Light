@@ -1,0 +1,80 @@
+:root {
+  /* ── Color: "Night Circuit" palette ─────────────────────────
+     Built from what's actually in the photos: warm bulb-glow
+     against a near-black sky, with a cool frost spark for
+     contrast. No cream, no luxury-clay accent. */
+  --ink-950: #0a0a0d;
+  --ink-900: #111114;
+  --ink-800: #18181d;
+  --ink-700: #232329;
+  --ink-600: #35353d;
+  --plum-950: #150f0e;
+  --plum-900: #1d1513;
+
+  --amber-300: #ffcb8a;
+  --amber-400: #ffab55;
+  --amber-500: #ff9433;
+  --amber-600: #e37820;
+
+  --frost-300: #b3e6ff;
+  --frost-400: #7fd4ff;
+  --frost-500: #4dc0f5;
+
+  --violet-300: #d7b8ff;
+  --violet-400: #b183ff;
+  --violet-500: #8f5cf0;
+
+  --emerald-300: #a8f0c6;
+  --emerald-400: #5fe0a0;
+  --emerald-500: #34c485;
+
+  --rose-400: #ff7fb0;
+  --rose-500: #ff5c96;
+
+  --paper-50: #f7f5f0;
+  --mist-300: #d4d3d9;
+  --mist-500: #93949f;
+  --mist-700: #5b5c66;
+
+  /* semantic */
+  --bg-base: var(--ink-950);
+  --bg-raised: var(--ink-900);
+  --bg-alt: var(--plum-950);
+  --bg-alt-raised: var(--plum-900);
+  --text-primary: var(--paper-50);
+  --text-muted: var(--mist-500);
+  --text-muted-strong: var(--mist-300);
+  --accent: var(--amber-400);
+  --accent-strong: var(--amber-500);
+  --accent-cool: var(--frost-400);
+  --hairline: rgba(247, 245, 240, 0.12);
+  --hairline-strong: rgba(255, 171, 85, 0.35);
+
+  /* per-section glow hues — each section gets its own light color,
+     echoing how every real install has its own color story */
+  --glow-hero: 255, 148, 51;
+  --glow-services: 255, 148, 51;
+  --glow-why: 143, 92, 240;
+  --glow-how: 79, 224, 160;
+  --glow-gallery: 79, 196, 245;
+  --glow-testimonials: 255, 92, 150;
+  --glow-areas: 143, 92, 240;
+  --glow-quote: 255, 148, 51;
+  --glow-faq: 255, 92, 150;
+
+  /* type */
+  --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --font-sans: "Manrope", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  /* radii + shadow: sharp, technical — not bubble-card */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --shadow-soft: 0 20px 44px -24px rgba(0, 0, 0, 0.65);
+  --shadow-deep: 0 34px 70px -30px rgba(0, 0, 0, 0.75);
+
+  /* layout */
+  --container: 1240px;
+  --container-narrow: 860px;
+  --section-pad: clamp(4.5rem, 8vw, 7.5rem);
+}

@@ -1,0 +1,27 @@
+.circuit-trace {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.circuit-trace--flip svg {
+  transform: scaleY(-1);
+}
+
+.circuit-trace__pulse {
+  stroke-dasharray: 90 1400;
+  stroke-dashoffset: 1490;
+  animation: trace-pulse 6s linear infinite;
+}
+
+@keyframes trace-pulse {
+  0% { stroke-dashoffset: 1490; }
+  100% { stroke-dashoffset: -90; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .circuit-trace__pulse {
+    animation: none;
+    stroke-dasharray: none;
+  }
+}
